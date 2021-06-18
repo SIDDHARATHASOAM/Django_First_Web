@@ -1,0 +1,152 @@
+{% extends "base.html" %}    
+<!-- extend my base class which contain my navbar & footer -->
+
+{% block title %}
+HOME
+{% endblock title %}
+<!--  this is just use for provide title name  -->
+
+
+<!-- this is body block contain my all content -->
+{% block body %}
+<div class="container-fluid">
+  <!---this is carousel block -->
+  <div id="carouselExampleCaptions fd" class="carousel slide" data-bs-ride="carousel" style="position: inherit;">
+    <div class="carousel-indicators" style = "top: 39rem;">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="max-width: 90%; margin-left: 5%;" >
+      <div class="carousel-item active">
+        <img src="/static/img/college2.jpg" height="500" width="1600"  class="d-block w-100" alt=" Birthday Image" style="border-radius: 1.5rem; ">
+        <div class="carousel-caption d-none d-md-block ">
+          <h5>Mukundian's</h5>
+          <p>Celebrate Birtdays... .</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/college2a.jpg"  alt= "Fresher Party Image"  height="500" width="1600" class="d-block w-100" style="border-radius: 1.5rem"; >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fresher Party</h5>
+          <p> Dress well when all are in best mode.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/college2ccc.jpg"  height="500" width="1600" class="d-block w-100" style="border-radius: 1.5rem"; alt="Siddharatha soam Image">
+        <div class="carousel-caption d-none d-md-block" style=" color:black">
+          <h5>urban vibes..</h5>
+          <p>Lockdown make me chill.....</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style=" position: absolute; top: 6rem; width: 7rem;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style=" position: absolute; top: 6rem; width: 7rem;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="container">
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row" style="text-align: center;">
+        <h2 class="my-4" style="text-align: center; font-weight: 600;"> About our supporters</h2>
+      <div class="col-lg-4" style="margin-top: 1.4rem;">
+        <img src="/static/img/sidimg.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          
+        <h2>C.E.O Siddharatha</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quasi optio eaque maiores cupiditate at exercitationem! Soluta obcaecati voluptatum dicta..</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div style="margin-top: 1.4rem;" class="col-lg-4">
+        <img src="/static/img/team-05.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+        <h2>Dev Nikko</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum eos beatae asperiores corrupti perferendis et ducimus veritatis veniam assumenda?
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div style="margin-top: 1.4rem;" class="col-lg-4">
+        <img src="/static/img/team-03.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+        <h2>Manager</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vitae. Cumque molestiae atque, perferendis recusandae corporis neque! Repellendus!</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+
+    <h2 class="my-4" style="text-align: center; font-weight: 600;"> Recently Events</h2>
+    <!-- START THE FEATURETTES -->
+ <!--  Featuresttes 1st -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7" style="background-image: black;">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://source.unsplash.com/500x500/? sport car" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" xmlns=" role=" img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
+          focusable="false" style="border-radius: 1.5rem">
+      </div>
+    </div>
+
+
+
+ <!--  Featuresttes 2nd-->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+          layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://source.unsplash.com/500x500/?lamborghini" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius: 1.5rem">
+      </div>
+    </div>
+
+
+ <!--  Featuresttes 3rd -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+          intended to be actually read, simply here to give you a better view of what this would look like with some
+          actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://source.unsplash.com/500x500/?audi" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false" style="border-radius: 1.5rem">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</div>
+{% endblock body %}

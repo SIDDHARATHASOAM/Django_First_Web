@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    font-family: cursive;
+
+}
+.outter_section{
+    width: 100%;
+    float: left;
+}
+.inner_section{
+    width: 90%; 
+    background-color: black;
+    border-radius: 1.5rem;
+    margin: 1px auto;
+
+}
+.weblogo{
+    float: left;
+}
+/* navigation bar css styling  section*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+nav ul{
+    float: right;
+    padding: 2% 0%;
+}
+nav ul li{
+    display: inline;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+    padding: 8px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+color:white;
+background-color: darkgray;
+border-radius: 4px;
+}
+
+
+.nav_button_BUY_NOW{
+    border: 2px solid grey;
+    margin-left: 12px;
+    border-radius: 4px;
+    padding: 8px 2px;
+}
+/* end of navigation bar css styling*/
+.image_round{
+    width: 500;
+    height: auto;
+    position: relative;
+    border-radius: 50%;
+}
